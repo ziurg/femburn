@@ -2,7 +2,7 @@
 Module permettant le chargement d'un modèle FEM au format Nastran, composé d'éléments tétraédriques.
 """
 
-from app.domain.model.fem_structure import FEM, Node, Element
+from app.domain.model.fem_structure import FEM
 from app.domain.ports.model_interface import ModelInterface
 from typing import List
 

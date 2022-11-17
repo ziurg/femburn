@@ -1,4 +1,4 @@
-from app.domain.model.fem_structure import FEM, Node, Element
+from app.domain.model.fem_structure import FEM, Node
 import pytest
 
 
