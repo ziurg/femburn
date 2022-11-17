@@ -3,6 +3,19 @@ from app.adapters.nastran_interface import NastranParser
 
 
 def test_load_nastran_grid_and_ctria3(nastran_file):
+    """Test Basic nastran file loading.
+
+    Given a Nastran file containing GRID and CTRIA3 element.
+
+    When load the file
+
+    Then we get a Finite Element Model with corresponding nodes and elements
+
+    Parameters
+    ----------
+    nastran_file : fixture
+        temporary file create in conftest.py
+    """
     ni = NastranParser()
     model = FEM()
     model.load(ni, nastran_file)

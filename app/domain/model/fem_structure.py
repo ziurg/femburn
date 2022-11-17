@@ -15,13 +15,6 @@ class Element:
         return nid in self.nodes
 
 
-class TetraElement(Element):
-    type: str = "TETRA"
-
-    def __init__(self):
-        super
-
-
 @dataclass
 class Node:
     id: int

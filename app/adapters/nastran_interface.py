@@ -7,7 +7,7 @@ from app.domain.ports.model_interface import ModelInterface
 from typing import List
 
 
-def splitBy8(text: str, chunk_size: int = 8) -> List[str]:
+def split_by_8(text: str, chunk_size: int = 8) -> List[str]:
     return [text[i : i + chunk_size] for i in range(0, len(text), chunk_size)]
 
 
@@ -32,7 +32,7 @@ class NastranParser(ModelInterface):
             lines = (line.strip() for line in f.readlines())
             lines = (line for line in lines if line)
             for line in lines:
-                fields = map(str.strip, splitBy8(line))
+                fields = map(str.strip, split_by_8(line))
                 [name, field1, _, field3, field4, field5, *_] = fields
                 if name == "GRID":
                     model.create_node(

@@ -43,25 +43,12 @@ def model() -> FEM:
     return m
 
 
-# def test_affect_material_to_elements(model):
-#     mat = Material()
+# TODO : test_affect_material_to_elements
 
-# def test_get_cdg_without_material(model):
-#     mat = Material()
-#     model.add_material
-#     pass
+# TODO : test_get_cdg_without_material
 
+# TODO : test_get_cdg_with_unique_material
 
-# def test_get_cdg_with_unique_material():
-#     pass
+# TODO : test_get_cdg_with_two_materials
 
-
-# def test_get_cdg_with_two_materials():
-#     pass
-
-
-# def test_get_element_type():
-#     assert Element(id=1, nodes=[11, 12, 13, 14]).type == "TETRA"
-#     assert Element(id=1, nodes=[11, 12, 13, 14, 15]).type == "PYRA"
-#     assert Element(id=1, nodes=[11, 12, 13, 14, 15, 16]).type == "PENTA"
-#     assert Element(id=1, nodes=[11, 12, 13, 14, 15, 16, 17, 18]).type == "HEXA"
+# TODO : test_get_element_type
